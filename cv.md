@@ -6,6 +6,7 @@
 * Lodbrok9@gmail.com
 * https://github.com/Zheka90by
 * [telegram](https://t.me/Zheka90by)
+* Borisov
 ## Objective ##
 I want improve my skills and gain experience in web development
 ## Skills ##
