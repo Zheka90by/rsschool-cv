@@ -1,1 +1,1 @@
-https://Zheka90by-account.github.io/rsschool-cv/cv
+https://Zheka90by.github.io/rsschool-cv/cv
