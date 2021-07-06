@@ -1,7 +1,7 @@
 # __Yauheni Liasun__ #
 ## Beginning Front-end Development ##
 
-![foto](https://sun9-28.userapi.com/impf/hRVRjTzG_c244wilY5iCwka1gfcN8M6bdCID0w/k8lPudzdaak.jpg?size=1292x1580&quality=96&sign=eaa2cccf9001cb2c62f6d40d8fb974f5&type=album)
+![foto](https://b.radikal.ru/b15/2107/92/f9a8449918eet.jpg)
 ## __Contacts__ ##
 * Lodbrok9@gmail.com
 * https://github.com/Zheka90by
