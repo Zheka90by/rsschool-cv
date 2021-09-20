@@ -5,84 +5,144 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>CV</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <div class='photoBlock'>
-      <img class='profilePhoto' src="https://b.radikal.ru/b15/2107/92/f9a8449918eet.jpg" alt="Foto" />
-    </div>
-    <div class='basicInfo'>
-      <h1 class='myName'>Yauheni Liasun</h1>
-      <h2>Beginning Front-end Development</h2>
-    </div>
-  </header>
-  <main>
-    <section class='leftInfo'>
-      <h3 class='contacts'>Contacts</h3>
-      <ul class='list'>
-        <li>
-          <a href="https://t.me/Zheka90by" class='linkTelega'>Telegram</a>
-        </li>
-        <li>
-          <h5>Lodbrok9@gmail.com</h5>
-        </li>
-        <li>
-          <h5>City: Borisov</h5>
-        </li>
-      </ul>
-      <h3 class='skills'>Skills</h3>
-      <ul class='list'>
-        <li>
-          <h5>HTML</h5>
-        </li>
-        <li>
-          <h5>CSS</h5>
-        </li>
-        <li>
-          <h5>Basic Javascript</h5>
-        </li>
-        <li>
-          <h5>Basic Node JS</h5>
-        </li>
-        <li>
-          <h5>Git</h5>
-        </li>
-      </ul>
-    </section>
+  <div class="container">
 
-    <aside class='rightInfo'>
-      <section>
-        <h3 class='edu'>Education</h3>
+    <header>
+      <nav class="navigation">
+        <ul class="list-navigation" id="list-navigation">
+          <li class="item-navigation"><a href="#about-me" class="link">About me</a></li>
+          <li class="item-navigation"><a href="#contacts" class="link">Contacts</a></li>
+          <li class="item-navigation"><a href="#skills" class="link">Skills</a></li>
+          <li class="item-navigation"><a href="#education" class="link">Education</a></li>
+          <li class="item-navigation"><a href="#code" class="link">Sample code</a></li>
+          <li class="item-navigation"><a href="#language" class="link">Language</a></li>
+        </ul>
+        <span id="burger" class="burger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </nav>
+      <div class="header-container">
+        <div class="photo-block">
+          <img class="profile-photo" src="img/ava.png" alt="Foto" />
+        </div>
+        <div class="basic-info">
+          <h1 class="my-name">Yauheni Liasun</h1>
+          <h4>Beginning Front-end Development</h4>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-container" id="about-me">
+        <h3 class="title-section">About me</h3>
+        <p>
+          Hi, my name is Zhenya. I am here because I like web development. We can say that this is my hobby. Having fun
+          at work, isn't it cool?
+        </p>
+      </section>
+      <section class="section-container" id="contacts">
+        <h3 class="title-section">Contacts</h3>
+        <ul class="list">
+          <li>
+            <a href="https://t.me/Zheka90by">Telegram</a>
+          </li>
+          <li>
+            <h5>Lodbrok9@gmail.com</h5>
+          </li>
+          <li>
+            <h5>City: Borisov</h5>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-container" id="skills">
+        <h3 class="title-section">Skills</h3>
+        <ul class="list">
+          <li>
+            <h5>HTML</h5>
+          </li>
+          <li>
+            <h5>CSS</h5>
+          </li>
+          <li>
+            <h5>Basic Javascript</h5>
+          </li>
+          <li>
+            <h5>Basic Node JS</h5>
+          </li>
+          <li>
+            <h5>Git</h5>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-container" id="education">
+        <h3 class="title-section">Education</h3>
         <p>2008-2013 Mogilev State University of Food Technologies</p>
         <p>Speciality: Machines and Apparatuses of Food Production</p>
+        <p>2021 The Rolling Scopes School: JS/FE Pre-school(Javascript)</p>
       </section>
-      <section>
-        <h3 class='code'>Sample code</h3>
-        <code>
-          function isSquare(n) {<br>
-            return Math.sqrt(n) % 1 === 0;<br>
-          }
-        </code>
+
+      <section class="code-container" id="code">
+        <h3 class="title-section">Sample code</h3>
+        <pre><code class="javascript">
+          class GuessingGame {
+            constructor() { }
+        
+            setRange(min, max) {
+                this.min = min;
+                this.max = max;
+            }
+        
+            guess() {
+                return Math.ceil((this.min + this.max) / 2)
+            }
+        
+            lower() {
+                this.max = this.guess()
+            }
+        
+            greater() {
+                this.min = this.guess()
+            }
+        }
+      </code></pre>
+        <h4 class="title-section">Also my project:</h4>
+        <p>Drum Kit is a music application in which you can play sounds by pressing the keys on the keyboard. Each key
+          has its own sound.<br />#JavaScript30</p>
+        <a href="https://zheka90by-drum-kit.netlify.app/"><img class="img-drum" src="img/Drum.jpg" alt="Drum-kit"
+            width="180"></a>
       </section>
-      <section>
-        <h3 class='langInfo'>English Language</h3>
+
+      <section class="section-container" id="language">
+        <h3 class="title-section">English Language</h3>
         <p>Proficiency level - A2</p>
       </section>
-    </aside>
-  </main>
+    </main>
 
-  <footer>
-    <a href="https://rs.school/js/" class='linkSchool'>
-      <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool" width="180" />
-    </a>
-    <nav class='gitInfo'>
-      <address><a href='https://github.com/Zheka90by'>My github</a></address>
-      <time datetime="2021">2021</time>
-    </nav>
-  </footer>
+    <footer>
+      <div class="git-info">
+        <a href="https://rs.school/js/" class="link-school">
+          <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool" width="180" />
+        </a>
+      </div>
+      <div class="git-info">
+        <address><a href="https://github.com/Zheka90by">My github</a></address>
+        <time datetime="2021">2021</time>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 
 </html>

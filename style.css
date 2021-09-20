@@ -1,49 +1,110 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
-body {
-    max-width: 620px;
+html {
+    scroll-behavior: smooth;;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1020px;
     margin: 0px auto;
 }
 
 header {
+    background-color: #191542;
+    padding: 3% 1%;
+}
+
+.header-container {
     display: flex;
+    justify-content: start;
+    padding: 3% 5%;
 }
 
-main {
+.title-section {
+margin: 10px auto;
+color: rgb(16, 7, 41);
+}
+
+.list-navigation {
     display: flex;
+    justify-content: space-around;
 }
 
-.leftInfo {
-    width: 180px;
-    background-color: rgb(81, 81, 165);
-    color: aliceblue;
-    padding-top: 10px;
+.item-navigation {
+    list-style: none;
+    font-family: Roboto;
+    font-style: normal;
 }
 
- article {
-    margin-left: 30px;
-    margin-top: 20px;
-} 
-
-.contacts {
-    padding-bottom: 10px;
-    margin-left: 30px;
-    margin-top: 20px;
+@media (max-width: 640px) {
+    .list-navigation{
+        display: none;
+        float: right;
+    }
+    .burger{
+        margin:3px;
+        cursor:pointer;
+        float: right;
+       }
+       .burger i{
+         display:block;
+         width:30px;
+         height:6px;
+         margin:4px auto;
+         background: blanchedalmond;
+       }
+       .show{
+         display:block;
+       }
 }
 
-.linkTelega {
-    color: white;
+.link {
+    color: #EAE6CA
+}
+.link:hover{
+    color: burlywood;
 }
 
-.skills {
-    margin-top: 40px;
-    padding-bottom: 10px;
-    margin-left: 30px;
+.profile-photo {
+    border-radius: 50%;
+    width: 110px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-block {
+    max-width: 180px;
+    padding: 0px 20px;
+}
+
+.basic-info {
+    color: #EAE6CA;
+}
+
+.section-container {
+    margin: 5% 10%;
+    position: relative;
+}
+
+.section-container::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: black;
 }
 
 .list {
@@ -51,53 +112,26 @@ main {
     margin-left: 30px;
 }
 
-.rightInfo {
-    color: rgb(48, 80, 109);
-    padding-top: 30px;
-    margin-left: 20px;
-}
-
-.profilePhoto {
-    border-radius: 50%;
-    width: 110px;
-    display: block;  
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-
-.photoBlock {
-    background-color: rgb(81, 81, 165);
-    width: 180px;
-}
-
-.basicInfo {
-    color: rgb(81, 74, 117);
-    margin: 0px auto;
-    margin-top: 20px;
-}
-
-.edu {
-    padding-bottom: 10px; 
-}
-
 .code {
     margin-top: 30px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
-.langInfo{
+.code-container{
+    margin: 5% 10%; 
+}
+
+.img-drum {
+    display: block;
+    margin: 20px auto;
+}
+
+.lang-info {
     margin-top: 30px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
 footer {
-display: flex;
-color: black;
-width: 620px;
-}
-
-.gitInfo {
-    margin-top: 35px;
-    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
 }
