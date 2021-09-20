@@ -15,7 +15,7 @@ a {
 }
 
 .container {
-    max-width: 620px;
+    max-width: 1020px;
     margin: 0px auto;
 }
 
@@ -26,7 +26,7 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     padding: 3% 5%;
 }
 
@@ -46,6 +46,28 @@ color: rgb(16, 7, 41);
     font-style: normal;
 }
 
+@media (max-width: 640px) {
+    .list-navigation{
+        display: none;
+        float: right;
+    }
+    .burger{
+        margin:3px;
+        cursor:pointer;
+        float: right;
+       }
+       .burger i{
+         display:block;
+         width:30px;
+         height:6px;
+         margin:4px auto;
+         background: blanchedalmond;
+       }
+       .show{
+         display:block;
+       }
+}
+
 .link {
     color: #EAE6CA
 }
@@ -63,6 +85,7 @@ color: rgb(16, 7, 41);
 
 .photo-block {
     max-width: 180px;
+    padding: 0px 20px;
 }
 
 .basic-info {

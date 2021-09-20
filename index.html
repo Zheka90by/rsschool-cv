@@ -8,8 +8,7 @@
   <title>CV</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +16,7 @@
 
     <header>
       <nav class="navigation">
-        <ul class="list-navigation">
+        <ul class="list-navigation" id="list-navigation">
           <li class="item-navigation"><a href="#about-me" class="link">About me</a></li>
           <li class="item-navigation"><a href="#contacts" class="link">Contacts</a></li>
           <li class="item-navigation"><a href="#skills" class="link">Skills</a></li>
@@ -25,6 +24,11 @@
           <li class="item-navigation"><a href="#code" class="link">Sample code</a></li>
           <li class="item-navigation"><a href="#language" class="link">Language</a></li>
         </ul>
+        <span id="burger" class="burger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
       </nav>
       <div class="header-container">
         <div class="photo-block">
@@ -41,7 +45,8 @@
       <section class="section-container" id="about-me">
         <h3 class="title-section">About me</h3>
         <p>
-          Hi, my name is Zhenya. I am here because I like web development. We can say that this is my hobby. Having fun at work, isn't it cool?
+          Hi, my name is Zhenya. I am here because I like web development. We can say that this is my hobby. Having fun
+          at work, isn't it cool?
         </p>
       </section>
       <section class="section-container" id="contacts">
@@ -111,9 +116,11 @@
             }
         }
       </code></pre>
-      <h4 class="title-section">Also my project:</h4>
-      <p>Drum Kit is a music application in which you can play sounds by pressing the keys on the keyboard. Each key has its own sound.<br/>#JavaScript30</p>
-      <a href="https://zheka90by-drum-kit.netlify.app/"><img class="img-drum" src="img/Drum.jpg" alt="Drum-kit" width="180"></a>
+        <h4 class="title-section">Also my project:</h4>
+        <p>Drum Kit is a music application in which you can play sounds by pressing the keys on the keyboard. Each key
+          has its own sound.<br />#JavaScript30</p>
+        <a href="https://zheka90by-drum-kit.netlify.app/"><img class="img-drum" src="img/Drum.jpg" alt="Drum-kit"
+            width="180"></a>
       </section>
 
       <section class="section-container" id="language">
@@ -134,6 +141,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
