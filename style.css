@@ -6,7 +6,8 @@
 }
 
 html {
-    scroll-behavior: smooth;;
+    scroll-behavior: smooth;
+    ;
 }
 
 a {
@@ -31,8 +32,8 @@ header {
 }
 
 .title-section {
-margin: 10px auto;
-color: rgb(16, 7, 41);
+    margin: 10px auto;
+    color: rgb(16, 7, 41);
 }
 
 .list-navigation {
@@ -47,31 +48,38 @@ color: rgb(16, 7, 41);
 }
 
 @media (max-width: 640px) {
-    .list-navigation{
+    .my-name {
+        font-size: 20px;
+    }
+    .list-navigation {
         display: none;
         float: right;
     }
-    .burger{
-        margin:3px;
-        cursor:pointer;
+    .burger {
+        margin: 3px;
+        cursor: pointer;
         float: right;
-       }
-       .burger i{
-         display:block;
-         width:30px;
-         height:6px;
-         margin:4px auto;
-         background: blanchedalmond;
-       }
-       .show{
-         display:block;
-       }
+    }
+    .burger i {
+        display: block;
+        width: 30px;
+        height: 6px;
+        margin: 4px auto;
+        background: blanchedalmond;
+    }
+    .show {
+        display: block;
+    }
+    .javascript {
+        font-size: 10px;
+    }
 }
 
 .link {
     color: #EAE6CA
 }
-.link:hover{
+
+.link:hover {
     color: burlywood;
 }
 
@@ -117,8 +125,8 @@ color: rgb(16, 7, 41);
     padding-bottom: 10px;
 }
 
-.code-container{
-    margin: 5% 10%; 
+.code-container {
+    margin: 5% 10%;
 }
 
 .img-drum {
